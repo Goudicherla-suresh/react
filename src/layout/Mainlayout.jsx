@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/header'; // Corrected component name
+import Home from '../pages/home';
+import Footer from '../components/Footer';
 
-const Mainlayout = () => {
+const MainLayout = () => {
   return (
     <div>
-      
+      <div className='Header' style={{ height: '50px', backgroundColor: 'beige' }}>
+        <Header />
+        <Home />
+        <Footer />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Mainlayout
- 
+export default MainLayout; // Corrected component name
